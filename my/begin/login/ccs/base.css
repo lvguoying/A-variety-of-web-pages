@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header a{
+   display: block;
+}
+.header{
+    line-height: 0;
+    width: 1130px;
+    margin: 0 auto;
+}
+.contain{
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    height: 588px;
+}
+.contain .login-bar{
+    width: 1130px;
+    margin: 32px 0;
+}
+.contain .login-form{
+    background-color: #ffffff;
+    width: 410px;
+    height: 524px;
+    float: right;
+    margin-top:32px;
+    font-size: 24px;
+}
+.contain .top-text a{
+    text-decoration: none;
+
+    color: #666666;
+
+}
+.contain .login-form .top-text{
+    padding: 27px 0 24px;
+    text-align: center;
+}
+.contain .border-line{
+    border-left: 2px solid #dddddd ;
+    margin: 0 35px 42px;
+}
+.contain .top-text a:first-child{
+    color: #f56600;
+}
+.contain .top-text a:hover{
+     color: #f56600;
+
+}
