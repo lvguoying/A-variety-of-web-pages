@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    function myFunction() {
+        var x = document.getElementById("fname");
+        x.value=x.value.toUpperCase();
+    }
+</script>
+<body>
+请输入英文字符：<input type="text"id="fname"onchange="myFunction()">
+<p>当你离开输入字段时，会触发将输入的文本转换为大写的函数</p>
+</body>
+</html>

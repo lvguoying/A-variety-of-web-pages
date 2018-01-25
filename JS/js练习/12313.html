@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .aa{
+            color: olivedrab;
+            background-color: #00aaee;
+        }
+        .active{
+            background-color: #00aaee;
+        }
+        ul li{
+            display: block;
+            width: 500px;
+
+
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1.javascript</li>
+    <li>2.javaScript</li>
+    <li>3.javaSCript</li>
+    <li>4.JAvascript</li>
+    <li>5.Javascript</li>
+    <li>6.Javascript</li>
+</ul>
+    <script>
+
+        var a = document.getElementsByTagName("li");
+        for(var i=0 ;i<a.length;i++){
+            a[i].onmouseover = function () {
+                for(var j=0;j<a.length;j++){
+                   a[j].className="";
+                }
+                this.className="aa";
+
+            }
+        }
+
+    </script>
+</body>
+</html>

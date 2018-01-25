@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style-type: none;
+            border: 1px solid red;
+            width: 150px;
+            text-align: center;
+            position: absolute;
+            display: none;
+        }
+        ul li{
+            border: 1px solid blue;
+        }
+        .aa{
+            color: #00d20d;
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+<ul id="ul-menu">
+    <li>设置待办</li>
+    <li>设置已读</li>
+    <li>设置删除</li>
+    <li>删除一切</li>
+</ul>
+<input type="text"id="test-input" value="HElLO">
+<script>
+    var aLi = document.getElementsByTagName("li");
+    var oUl = document.getElementById("ul-menu");
+    var oInput = document.getElementById("test-input");
+    alert(oInput.value);
+    document.oncontextmenu = function (e) {
+        oUl.style.display = "block";
+        oUl.style.top = e.clientY +"px";
+        oUl.style.left = e.clientX+"px";
+        return false
+    };
+    document.onclick = function () {
+        oUl.style.display = "none";
+    };
+    for(var i = 0;i<aLi.length;i++){
+        aLi[i].onclick = function () {
+            var thisLink = this.getAttribute("links");
+
+            location.href = "http://"+thisLink;
+            var thisText = this.innerText;
+
+        };
+    
+    }
+</script>
+</body>
+</html>

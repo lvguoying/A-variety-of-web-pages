@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .v1{
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            left: 500px;
+        }
+        .v2 button{
+
+        }
+        .v3{
+            margin: 10px 20px 0;
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="v1">
+    <div class="v2">
+        <button id="b1">变宽</button>
+        <button id="b2">变高</button>
+        <button id="b3">变色</button>
+        <button id="b4">隐藏</button>
+        <button id="b5">重置</button>
+    </div>
+    <div class="v3">
+
+    </div>
+</div>
+<script>
+    var aBtn = document.getElementsByTagName("input");
+    var oDiv = document.getElementById("div1");
+    var arr1 =["width","height","background-color","display"];
+    var arr2= ["300px","300px","#dddddd","none"];
+    for(var i=0;i<aBtn.length;i++){
+        aBtn[i].index = i;
+        aBtn[i].onclick = function () {
+            var styleName = arr1[this.index];
+            var styleVal = arr2.[this.index];
+              this.index==4?
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+            border: 1px solid#ddd;
+            width: 150px;
+            text-align: center;
+            display: none;
+            position: absolute;
+        }
+        ul li{
+            border-bottom:3px solid #ddd;
+
+
+        }
+    </style>
+</head>
+<body>
+<ul id="ul-menu">
+    <li links="www.baidu.com">设置待办</li>
+    <li>设置已读</li>
+    <li>设置未读</li>
+    <li>删除邮件</li>
+</ul>
+<script>
+    var aLi = document.getElementsByTagName("li");
+    var oUl = document.getElementById("ul-menu");
+    document.oncontextmenu = function (e) {
+        e = e||window.event;
+       oUl.style.display = "block";
+
+       oUl.style.top = e.clientY+"px";
+       oUl.style.left = e.clientX+"px";
+       return false
+    };
+    document.onclick = function () {
+        oUl.style.display = "none";
+    };
+    for(var i = 0;i<aLi.length;i++){
+        aLi[i].onclick = function () {
+            var thisLink = this.getAttribute("links");
+
+            location.href = "http://"+thisLink;
+            var thisText = this.innerText;
+
+           // alert(thisText);
+        }
+    }
+
+</script>
+</body>
+</html>

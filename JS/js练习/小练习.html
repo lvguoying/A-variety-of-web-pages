@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        button{
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background-color: black;
+            margin: 0 auto ;
+
+        }
+    </style>
+</head>
+<body>
+
+    <button id="b1">变大</button>
+    <button id="b2">变小</button>
+    <button id="b3">变色</button>
+    <button id="b4">消失</button>
+    <div id="v1"></div>
+
+<script>
+    var bTn1 = document.getElementById("b1");
+    var bTn2 = document.getElementById("b2");
+    var bTn3 = document.getElementById("b3");
+    var bTn4 = document.getElementById("b4");
+
+    var dIv = document.getElementById("v1");
+    bTn1.onclick = function () {
+    dIv.style.width = "300px";
+    dIv.style.height = "300px";
+    };
+    bTn2.onclick = function () {
+    dIv.style.width = "100px";
+    dIv.style.height= "100px";
+    };
+    bTn3.onclick = function () {
+    dIv.style.backgroundColor = "red";
+    };
+    bTn4.onclick = function () {
+    dIv.style.display = "none";
+    };
+
+</script>
+</body>
+</html>
