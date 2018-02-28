@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        body{
+
+        }
+        .box{
+            position: absolute;
+            top: 200px;
+            left: 640px;
+        }
+        .top{
+            background-color: #00d20d;
+            width: 150px;
+
+        }
+        .bottom{
+            background-color: #f56600;
+            width: 150px;
+        }
+        .menu div{
+            text-align: center;
+        }
+        .header-top ul li {
+        }
+        .header-top{
+            background-color: #FF0000;
+        }
+        .header-bottom{
+            background-color:#0000FF;
+        }
+        .menu ul{
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul class="menu">
+        <li class="top">
+            <div class="header-top">标题</div>
+            <ul class="aa">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </li>
+        <li class="bottom">
+            <div class="header-bottom">标题</div>
+            <ul class="bb">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<script>
+    var oDiv1 = document.getElementsByClassName("header-top")[0];
+    var oDiv2 = document.getElementsByClassName("header-bottom")[0];
+    var aUl1 = document.getElementsByClassName("aa")[0];
+    var aUl2 = document.getElementsByClassName("bb")[0];
+   oDiv1.onclick = function (e) {
+       console.log(e)
+        aUl1.style.display = "block";
+    };
+    oDiv2.onclick = function () {
+        aUl2.style.display = "block";
+    }
+</script>
+</body>
+</html>

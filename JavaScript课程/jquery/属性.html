@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.js"></script>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div id="box" class="aa"></div>
+<input type="text"value="012">
+<input type="checkbox" id="cb" value="111">复选框
+<div class="box"></div>
+<script>
+    //console.log($("#cb").val())
+    //$("#box").removeAttr("class")
+    console.log($(".box").height());
+    console.log($(".box").innerHeight())
+    console.log($(".box").outerWidth())
+</script>
+</body>
+</html>

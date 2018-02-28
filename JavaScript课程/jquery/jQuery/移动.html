@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移动</title>
+    <script src="../jquery-3.3.1.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        select{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<select multiple="multiple" name="" id="left">
+    <option>选项1</option>
+    <option>选项2</option>
+    <option>选项3</option>
+    <option>选项4</option>
+    <option>选项5</option>
+    <option>选项6</option>
+    <option>选项7</option>
+    <option>选项8</option>
+    <option>选项9</option>
+</select>
+<br>
+<button id="btn">选中添加到右边</button>
+<button id="atn">选中添加到右边</button>
+<select multiple="multiple" name="" id="right" style="position: absolute;left: 300px;top: 0">
+    <option>选项10</option>
+</select>
+<script>
+    $("#btn").click(function () {
+        if($("#left>option").is(":selected")){
+           $("#left>option:selected").appendTo("#right")
+        }
+    });
+    $("#atn").click(function () {
+        if($("#right>option").is(":selected")){
+            $("#right>option:selected").appendTo("#left")
+        }
+    });
+    $("#left").on("dblclick","option",function () {
+        $("#left>option:selected").appendTo("#right")
+    })
+    $("#left").on("dblclick","option",function () {
+        $("#left>option:selected").appendTo("#right")
+    })
+</script>
+</body>
+</html>

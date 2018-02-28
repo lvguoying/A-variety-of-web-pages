@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../jquery-3.3.1.js"></script>
+</head>
+<body>
+<input type="text" id="inp">
+<p>iphone</p>
+<p>iphone8</p>
+<p>iphoneX</p>
+<p>ipod</p>
+<p>ipad</p>
+<script>
+//    $("input").keydown(function () {
+//        $("p:contains()").css("color","red")
+//    })
+$("#inp").keydown(function () {
+    $("p:contains("+$(this).val+")").css("color","red")
+})
+
+
+</script>
+
+</body>
+</html>

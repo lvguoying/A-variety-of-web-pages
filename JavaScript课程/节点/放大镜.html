@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>放大镜</title>
+    <style>
+     *{
+         margin: 0;
+         padding: 0;
+
+     }
+    </style>
+</head>
+<body>
+<div id="box1">
+    <img src="../js练习/2018-1-24/img/img5.jpg"style="width: 400px;height: 400px">
+    <div id="box2" style="background-color:rgba(255,255,255,0.3);width: 100px;
+    height: 100px;position: absolute;top: 0;left: 0;"></div>
+</div>
+
+<script>
+    var oBigBox = document.getElementsByClassName("big-img")[0];
+    var oBigImg = document.getElementsByClassName("big-img")[0];
+    var top = e.clientY-oMove.offsetWidth/2;
+    var left= e.clientX-oMove.offsetHeight/2;
+    if(top<0){
+        top=0
+    }
+    if(left<0){
+        left = 0;
+    }
+    var maxTop = oSmallImg.offsetHeight-oMove.offsetHeight;
+    var maxLeft = oSmallImg.offsetWidth-oMove.offsetWidth;
+
+    if(top>maxTop){
+        top = maxTop;
+    }
+    if(left>maxLeft){
+        left = maxLeft;
+    }
+    oMove.style.left = left + "px";
+    oMove.style.top = top + "px";
+    oBigImg.style.left = -left*2+"px";
+    oBigImg.style.top = -top*2 +"px";
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 10px;
+            background-color: #d32f2f;
+            margin-bottom: 1px;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+<div class="change-div">LOVE</div>
+<div class="change-div"></div>
+<div class="change-div"></div>
+<div class="change-div"></div>
+<div class="change-div"></div>
+<div class="change-div">LOVE</div>
+<script>
+    var aDiv = document.getElementsByClassName("change-div");
+    for( var i=0;i<aDiv.length;i++){
+        aDiv[i].index = i;
+        aDiv[i].onmouseover = function () {
+            clearInterval(this.timer);
+            var This = this;
+            this.timer = setInterval(function () {
+                if(aDiv[This.index].offsetWidth== 600){
+                    clearInterval(This.timer)
+                }else{
+                    aDiv[This.index].style.width = aDiv[This.index].offsetWidth + 10+ "px";
+                }
+            },10)
+        }
+        aDiv[i].index = i;
+        aDiv[i].onmouseout= function () {
+            clearInterval(this.timer);
+            var This = this;
+            this.timer = setInterval(function () {
+                if(aDiv[This.index].offsetWidth==200){
+                    clearInterval(This.timer)
+                }else{
+                    aDiv[This.index].style.width = aDiv[This.index].offsetWidth -10+ "px";
+                }
+            },10)
+        }
+    }
+</script>
+</body>
+</html>

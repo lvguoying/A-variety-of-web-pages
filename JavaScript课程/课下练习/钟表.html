@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>钟表</title>
+</head>
+<body onload="starTime">
+    <script>
+    function starTime()
+    {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innterHTML = h +
+            ":"+m + ":" + s;
+        t = setTimeout('starTime()',500)
+    }
+
+    function checkTime(i)
+    {
+        if(i<10){
+            i = "0"+i;
+        }
+        return i;
+    }
+    </script>
+<div id = "txt"></div>
+</body>
+</html>

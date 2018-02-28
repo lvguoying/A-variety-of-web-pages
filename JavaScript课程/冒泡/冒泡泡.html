@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script>
+
+    window.onload = function(){
+        var outA = document.getElementById("outA");
+        var outB = document.getElementById("outB");
+        var outC = document.getElementById("outC");
+
+        // 目标
+        outC.addEventListener('click',function(){alert("target");},false);
+
+        // 事件冒泡
+        outA.addEventListener('click',function(){alert("bubble");},false);
+
+        // 事件捕获
+        outA.addEventListener('click',function(){alert("capture");event.stopPropagation();},true);
+
+    };
+
+</script>
+
+<body>
+<div id="outA" style="width:400px; height:400px; background:#CDC9C9;position:relative;">
+    <div id="outB" style="height: 200px; background:#0000ff;top:100px;position:relative;">
+        <div id="outC" style="height:100px; background:#FFB90F;top:50px;position:relative;"></div>
+    </div>
+</div>
+</body>
+
+
+</html>

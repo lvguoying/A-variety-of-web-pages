@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>幻灯片</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #424242;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .box{
+
+            width: 492px;
+            height: 300px;
+            padding: 10px;
+            margin: 30px auto;
+            border-radius: 10px;
+            background: #ffffff;
+            overflow: hidden;
+            position: relative;
+        }
+        .radiu-btn{
+            position: absolute;
+        }
+        .radiu-btn li {
+            width: 20px;
+            height: 20px;
+            background: #F90;
+            opacity: 0.7;
+            filter: alpha(opacity=70);
+            float: left;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            font-size: 14px;
+            color: #dddddd;
+            margin-right: 10px;
+        }
+        .img-bar{
+            height:170px;
+            overflow: hidden;
+        }
+        .left-bt li{
+            line-height: 17px;
+        }
+        .left-bt{
+            left: 10px;
+            bottom: 10px;
+        }
+        .radiu-btn{
+            right: 0;
+            bottom: 0;
+        }
+        .radiu-btn .active{
+            background-color: #F60;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="img-bar">
+        <ul>
+            <li><img src="img/img1.jpg" alt=""></li>
+            <li><img src="img/img2.jpg" alt=""></li>
+            <li><img src="img/img3.jpg" alt=""></li>
+            <li><img src="img/img4.jpg" alt=""></li>
+            <li><img src="img/img5.jpg" alt=""></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="radiu-btn left-bt">
+            <li>&lt;</li>
+            <li>&gt;</li>
+        </ul></div>
+    <div>
+        <ul class="radiu-btn right-btn">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+</div>
+    <script>
+        var  aUl = document.getElementsByTagName("ul");
+        var  aLbtn = aUl[1].getElementsByTagName("li");
+        var aRbt = aUl[2].getElementsByTagName("li");
+        var aImg = aUl[0].getElementsByTagName("li");
+        var globalIndex= 0;
+        for(var i =0;i<aRbt.length;i++){
+            aRbt[i].index = i;
+            aRbt[i].onmouseover = function () {
+                changeImg()
+//                for(j=0;j<aRbt.length;j++){
+//                    aRbt[j].className= "";
+//                    aImg[j].style.display ="none"
+//                }
+//                 this.className = "active";
+//                aImg[this.index].style.display = "block";
+//                globalIndex = this.index;
+            }
+        }
+        for(var k= 0;k<aLbtn.length;k++){
+            aLbtn[k].onclick = function () {
+               changeImg()
+        }
+        function changeImg() {
+            for(j=0;j<aRbt.length;j++){
+                aRbt[j].className= "";
+                aImg[j].style.display ="none"
+            }
+            globalIndex++;
+            aRbt[globalIndex].className = "active";
+            aImg[globalIndex].style.display = "block";
+        }
+        }
+    </script>
+</body>
+</html>

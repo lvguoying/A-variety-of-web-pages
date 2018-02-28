@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-3.3.1.js"></script>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: #FF0000;
+        }
+    </style>
+</head>
+<body>
+<button id="show">显示</button>
+<button id="hide">隐藏</button>
+<button id="toggle">toggle</button>
+<button id="slideDown">slideDown</button>
+<button id="slideUp">slideUp</button>
+<button id="slideToggle">slideToggle</button>
+<button id="animated">animated</button>
+<button id="fadein">隐藏</button>
+<div id="box"></div>
+<script>
+    $("#show").click(function () {
+        $("#box").show(1000)
+    })
+    $("#hide").click(function () {
+        $("#box").hide(1000)
+    })
+    $("#toggle").click(function () {
+        $("#box").toggle(1000)
+    })
+    $("#slideDown").click(function () {
+        $("#box").slideDown(1000)
+    })
+    $("#slideUp").click(function () {
+        $("#box").slideUp(1000)
+    })
+    $("#slideToggle").click(function () {
+        $("#box").slideToggle(1000)
+    })
+
+
+
+
+
+
+
+        $("#box").click({
+            opacity: 0.25,
+            width:300
+        },1000);
+    })
+
+</script>
+</body>
+</html>

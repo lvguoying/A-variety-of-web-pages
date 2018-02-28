@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul{
+            list-style-type: none;
+            display: none;
+            position: absolute;
+        }
+        li{
+            border:1px solid#000000 ;
+            width: 100px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+
+    <ul id="ul-menu">
+        <li>查看邮件</li>
+        <li>删除邮件</li>
+        <li>标记已读</li>
+        <li>操你妈的</li>
+    </ul>
+
+<script>
+    var oUl = document.getElementById("ul-menu");
+    var aLi = document.getElementsByTagName("li");
+    document.oncontextmenu = function (e) {
+        oUl.style.display = "block";
+        oUl.style.top = e.clientY+"px";
+        oUl.style.left = e.clientX+"px";
+        return false
+    };
+    document.onclick = function () {
+        oUl.style.display = "none"
+    }
+    for( var i=0;i<aLi.length; i++){
+    aLi[i].onclick = function () {
+        var thisText = this.innerHTML;
+            alert(t)
+
+    }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        window.onload = function () {
+            console.log("onload"+":"+$("p").length)
+        }
+        $(document).ready(function () {
+            console.log("ready:"+$("p").length)
+        })
+
+    </script>
+</head>
+<body>
+<div id="box">
+    <div class="aa">
+       <p><p>11</p></p>
+        <div>ddddd</div>
+        <li></li>
+        <li></li>
+        <li></li>
+        <P>1</P>
+        <P>2</P>
+        <P>3</P>
+        <P>4</P>
+        <P>5</P>
+        <li>
+            <ul>
+                <li><p>1</p></li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </li>
+        <img src="" alt="">
+    </div>
+</div>
+<script>
+    $(function () {
+        console.log("简写："+$("p").length)
+    });
+      var $p = $("p");
+      var $box = $("#box");
+      var $aa = $(".aa");
+      var $child = $("#box  div").css("color","blue");
+      console.log($child)
+    console.log("p")
+//    $aa.html("11");
+//    console.log($box)
+    //$("li").has("p").css("color","red")
+</script>
+</body>
+</html>
