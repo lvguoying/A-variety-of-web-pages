@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>拟物时钟</title>
+	<link rel="stylesheet" href="index.css">
+	<style>
+		/*底座*/
+		.bg {
+			width: 400px;
+			height: 400px;
+			margin: 50px auto;
+            background: linear-gradient(to bottom, skyblue 0%,#29b2ea 100%);
+            border-radius: 20%;
+            box-shadow: 2px 2px 25px rgba(255, 255, 255, .5) inset,
+            			20px 20px 40px #7fdaff inset,
+            			-10px -10px 30px rgba(0, 0, 50, .3) inset,
+            			-20px -20px 40px #16a5df inset,
+            			10px 25px 40px -10px rgba(0, 0, 0, .5);
+		}
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<div class="clock">
+			<div class="hour" id="h"></div>
+			<div class="min" id="m"></div>
+			<div class="sen" id="s">
+				<span class="black"></span>
+				<span class="red"></span>
+			</div>
+		</div>
+	</div>
+
+	<script src="my.js"></script>
+</body>
+</html>

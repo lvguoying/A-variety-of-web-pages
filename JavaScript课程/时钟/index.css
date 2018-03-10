@@ -1,0 +1,88 @@
+html,body,h1,ul{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	overflow: hidden;
+	font-family: Arial,"微软雅黑";
+    background-color: #f4f4f4;
+}
+ul{
+	list-style: none;
+}
+/*初始化结束*/
+.clock{
+  	width: 320px;
+  	height: 320px;
+  	background-image: url(clock.jpg);
+  	background-size: cover;
+	background-repeat: no-repeat;
+	border: 6px solid #646464;
+    border-radius: 50%;
+    box-shadow: -10px -10px 10px -10px rgba(255, 255, 255, .3),
+                2px 2px 12px #333 inset,
+    			-2px -2px 8px #787878 inset,
+                10px 10px 10px -10px rgba(0, 0, 0, .3);
+    position: relative;
+    top: 37px;
+    left: 37px;
+}
+.clock .hour{
+	width: 4px;
+	height: 60px;
+    background-color: #555;
+    border-radius: 45%;
+    border: 2px solid #333;
+    position: absolute;
+    left: 50%;
+    top: 96px;
+    margin-left: -4px;
+    -webkit-transform-origin: bottom center;
+}
+.clock .min{
+  	width: 2px;
+  	height: 90px;
+    background-color: #D40A69;
+    border: 2px solid #FD86BE;
+    position: absolute;
+    left: 50%;
+    top: 66px;
+    margin-left: -3px;
+    z-index: 3;
+    -webkit-transform-origin: bottom center;
+}
+.clock .sen{
+	width: 0;
+	height: 120px;
+	border:1px solid #333;
+	position: absolute;
+	left: 50%;
+	top: 39px;
+    z-index: 3;
+    margin-left: -2px;
+	-webkit-transform-origin: bottom center;
+}
+.clock .sen .black{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: black;
+	border: 2px solid goldenrod;
+	position: absolute;
+	left: 50%;
+	bottom: -11px;
+	margin-left: -10px;
+	z-index: 4;
+}
+.clock .sen .red{
+    width: 4px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #D40A69;
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    margin-left: -2px;
+    z-index: 5;
+}
