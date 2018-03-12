@@ -4,68 +4,73 @@
     <meta charset="UTF-8">
     <title>正方体</title>
     <style>
-        .box{
-            animation: move 3s linear forwards infinite;
-            perspective-origin: 1000px;
-            transform-style:preserve-3d;
-        }
-        @keyframes move {
-            from{
-              transform: rotateY(0);
-            }
+    *{
+        margin: 0;
+        padding:0;
+    }
+    body{
+        background-color: black;
+        perspective: 1000px;
+    }
+    .container{
+        width: 200px;
+        height: 200px;
+        margin: 200px auto;
+        position: relative;
+        transform-style: preserve-3d;
+        animation: Rotate 3s infinite;
+    }
+    .cube{
+        width: 200px;
+        height: 200px;
+        background: #cccccc;
+        opacity:.6;
+        font-size: 80px;
+        line-height: 200px;
+        text-align: center;
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility:hidden;
+    }
+    .one{
+        transform: rotateY(180deg) translateZ(100px);
+    }
+    .two{
+        transform: rotateY(90deg) translateZ(100px);
+    }
+    .three{
+        transform: rotateY(-90deg) translateZ(100px);
+    }
+    .four{
+        transform: rotateX(90deg) translateZ(100px);
+    }
+    .five{
+        transform: rotateX(-90deg) translateZ(100px);
+    }
+    .six{
+        transform:  translateZ(100px);
+    }
+    @keyframes Rotate {
+        from{
+            transform: rotateY(0deg);
 
-            to{
-                transform: rotateY(360deg);
-            }
         }
-
-        .box div{
-            width: 200px;
-            height: 200px;
-            background: rgba(0,0,0,0.6);
-            border: 1px solid #000000;
-            margin: 0 auto;
-            transform-origin:180px 180px;
-            font-size: 50px;
-            text-align: center;
+        to{
+            transform: rotateY(360deg);
         }
-        .div1{
-            position: relative;
-            top: 200px;
-            right: 100px;
-            transform: rotateY(90deg) ;
-
-        }
-        .div2{
-            transform: rotateY(180deg) translateZ(100px);
-        }
-        .div3{
-            position: relative;
-            transform: rotateX(90deg);
-            top: -100px;
-        }
-        .div6{
-            position: relative;
-            top: -900px;
-            transform: rotateX(90deg)
-
-        }
-        .div5{
-            position: relative;
-            top: -800px;
-            left: 90px;
-            transform: rotateX(91deg);
-        }
+    }
     </style>
 </head>
 <body>
-<div class="box">
-    <div class="div1">1</div>
-    <div class="div2">2</div>
-    <div class="div3">3</div>
-    <div class="div4">4</div>
-    <div class="div5">5</div>
-    <div class="div6">6</div>
-</div>
+    <div class="container">
+        <div class="cube one">1</div>
+        <div class="cube two">2</div>
+        <div class="cube three">3</div>
+        <div class="cube four">4</div>
+        <div class="cube five">5</div>
+        <div class="cube six">6</div>
+    </div> 
 </body>
 </html>
