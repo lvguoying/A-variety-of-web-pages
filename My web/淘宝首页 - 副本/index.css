@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html,body{
+    width: 100%;
+    background-color: #f4f4f4;
+    height: 1000px;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+   
+}
+.wrapper .top-nav-wrap{
+    width: 100%;
+    height: 35px;
+    background-color: #f5f5f5;
+    /* border: 1px solid #eee;  */
+}
+.wrapper .top-nav-wrap .top-nav{
+    width: 1190px;
+    height: 35px;
+    margin: 0 auto;
+    /* border: 1px solid #000000;  */
+}
+.wrapper .top-nav-wrap .top-nav .top-nav-l{
+    float: left;
+}
+.wrapper .top-nav-wrap .top-nav .top-nav-r{
+    float: right;
+}
+.wrapper .top-nav-wrap .top-nav li{
+    float: left;
+    margin-right:7px; 
+}
+.wrapper .top-nav-wrap .top-nav li a{
+    color: #6c6c6c;
+    font-size: 12px;
+    line-height:35px;
+    padding: 0 6px;
+}
+.wrapper .top-nav-wrap .top-nav li a:hover,
+.wrapper .top-nav-wrap .top-nav li .login
+{
+    color: #f40;
+}
+.wrapper .top-nav-wrap .top-nav .china{
+    color: #3c3c3c;
+    font-size: 12px;
+    line-height: 35px;
+}
+.wrapper .top-nav-wrap .top-nav .cutOff span{
+    color: #ddd;
+    line-height: 35px;
+}
+.wrapper .top-nav-wrap .top-nav .bgPic{
+    display: inline-block;
+    width: 6px;
+    height: 3px;
+    vertical-align: middle;
+    background-size:100% 100%; 
+    border: 1px solid #000;
+}
+.wrapper .top-nav-wrap .top-nav .xsjPic{
+    background-image:url("#") ;
+}
+.wrapper .top-nav-wrap .top-nav .shopCarPic{
+    width: 12px;
+    height: 12px;
+    background-image: url("#");
+}
+.wrapper .top-nav-wrap .top-nav .likePic{
+    width: 12px;
+    height: 11px;
+    background-image: url("#");
+}
+.wrapper .top-nav-wrap .top-nav .webNavPic{
+    width: 8px;
+    height: 8px;
+    background-image: url("#");
+}
+/* 导航条结束*/
+.wrapper .search-wrap{
+    width: 100%;
+    height: 97px;
+    /* border: 1px solid #000; */
+    background-color: #fff;
+    padding-top:24px;
+    padding-bottom: 9px;
+}
+.wrapper .search-wrap .search-con{
+    width: 1190px;
+    height: 88px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+.wrapper .search-wrap .search-con .logo-box img{
+    width: 100%;
+    height: 100%;
+}
+.wrapper .search-wrap .search-con .logo-box{
+    display: inline-block;
+    vertical-align: middle;
+    width: 190px;
+    height: 80px;
+    /* border: 1px solid #000; */
+}
+.wrapper .search-wrap .search-con .search-box{
+    display: inline-block;
+    vertical-align: middle;
+    height:87px;
+    width:627px;
+    margin-left: 50px;
+    /* border:1px solid #000; */
+}
+.wrapper .search-wrap .search-con .search-box .search-bd{
+    width: 627px;
+    height: 62px;
+    /* border: 1px solid #000; */
+}
+.wrapper .search-wrap .search-con .search-box .search-bd li{
+    float: left;
+    width: 36px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    color: #f40;
+    margin-right:4px;
+    font-size: 12px 
+}
+.wrapper .search-wrap .search-con .search-box .search-bd li:hover{
+    background-color:#ffeee5; 
+}
+.wrapper .search-wrap .search-con .search-box .search-bd .select{
+    background: linear-gradient(to right,#ff9000 0,#ff5000 100%);
+    color: #fff;
+    font-weight: 700;
+    border-top-right-radius:6px; 
+    border-top-left-radius:6px; 
+    
+}
+.wrapper .search-wrap .search-con .search-bd .search-panel{
+    width: 627px;
+    height: 40px;
+    position: relative;
+    /* border: 1px solid #000; */
+}
+.wrapper .search-wrap .search-con .search-bd .btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 74px;
+    height: 40px;
+    z-index: 1000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px; 
+    text-align: center
+}
+.wrapper .search-wrap .search-con .btn button{
+    border: none;
+    background: linear-gradient(to right,#ff9000 0,#ff5000 100%);
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.wrapper .search-wrap .search-con .search-inp-box{
+    width: 551px;
+    height: 36px;
+    border: 2px solid #ff5000;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px;
+    border-right:none; 
+    overflow: hidden;
+}
+.wrapper .search-wrap .search-con .search-inp-box .search-inp{
+    width: 472px;
+    height: 36px;
+    overflow: hidden;
+}
+.wrapper .search-wrap .search-con .search-inp-box .search-inp input{
+    border: none;
+    width: 472px;
+    height: 24px;
+    line-height: 24px;
+    outline: 0;
+    text-indent: 10px;
+    padding: 6px 16px;
+    background-color: #fff; 
+}
+.wrapper .search-wrap .search-con .search-panel .sousuo,
+.wrapper .search-wrap .search-con .search-panel .camera{
+    display: inline-block;
+    position: absolute;
+}
+.wrapper .search-wrap .search-con .search-panel .sousuo{
+    width: 12px;
+    height: 24px;
+    top: 11px;
+    left: 12px;
+    background: url("#") no-repeat;
+    background-size:100% 100%; 
+}
+.wrapper .search-wrap .search-con .search-panel .camera{
+    width: 20px;
+    height: 21px;
+    top: 11px;
+    right: 90px;
+    background: url("#") no-repeat;
+    background-size:100% 100%; 
+}
+.wrapper .search-wrap .search-con .search-box .search-ft{
+    width: 625px;
+    height: 18px;
+    /* border: 1px solid #000; */
+}
+.wrapper .search-wrap .search-con .search-box .search-ft .more{
+    float: right;
+    font-size: 12px;
+    color: #666;
+    line-height: 18px;
+}
+.wrapper .search-wrap .search-con .search-box .search-ft ul li{
+    float: left;
+
+}
+.wrapper .search-wrap .search-con .search-box .search-ft ul li a{
+    font-size: 12px;
+    color: #666;
+    margin-right:8px;
+}
+.wrapper .search-wrap .search-con .search-box .search-ft li a:hover,
+.wrapper .search-wrap .search-con .search-box .search-ft ul .select a{
+    color: #ff5000;
+}
+.wrapper .search-wrap .search-con .search-box .search-tab{
+    width: 610px;
+    height: 22px;
+    /* border: 1px solid     #000; */
+    margin-left:17px;   
+}
+.wrapper .search-wrap .search-con .code-box{
+    display: inline-block;
+    vertical-align: middle;
+    height: 90px;
+    width: 76px;
+    border:1px solid #eee;
+    position: relative;
+    margin-left: 120px;
+}
+.wrapper .search-wrap .search-con .code-box .p-tb{
+    display: inline-block;
+    color: #ff5000;
+    text-align: center;
+    line-height: 20px;
+    margin: 4px auto 0;
+    width: 78px;
+    font-size: 14px;
+}
+.wrapper .search-wrap .search-con .code-box .close{
+    position: absolute;
+    top: 0;
+    height: 14px;
+    width: 14px;
+}
