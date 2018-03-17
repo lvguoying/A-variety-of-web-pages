@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>简历</title>
+    <script src="js/jquery-3.3.1.js"></script>
+
     <link rel="stylesheet" href="css/简历.css">
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap-theme.css">
+    <script src="../Bootstrap/js/bootstrap.js"></script>
+
 </head>
 <body>
     <div class="wrapper">
         <div class="section">
             <ul class="section-car">
-                <li class="color1"></li>
-                <li class="color2"></li>
-                <li class="color3"></li>
-                <li class="color4"></li>
-                <li class="color5"></li>
-                <li class="color6"></li>
+                <li class="colour"></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
             </ul>
         </div>
         <div class="header">
             <div class="header-img">
                 <img src="images/img1.jpg" alt="">
                 <div class="header-name">
-                    <h1>天王·吕国营</h1>
-                    <h2>Web前端工程师</h2>
+                    <h1>前端工程师-吕国营</h1>
+                    <!--<h2>Web前端工程师</h2>-->
                 </div>
             </div>
             <ul class="header-list">
@@ -105,9 +111,55 @@
 
 
     </div>
+    <div class="container">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            一个按钮
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        一些文字
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary">生成改变</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<form>-->
+        <!--<div class="form-group">-->
+            <!--<label for="exampleInputEmail1">Email address</label>-->
+            <!--<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+            <!--<label for="exampleInputPassword1">Password</label>-->
+            <!--<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+            <!--<label for="exampleInputFile">File input</label>-->
+            <!--<input type="file" id="exampleInputFile">-->
+            <!--<p class="help-block">Example block-level help text here.</p>-->
+        <!--</div>-->
+        <!--<div class="checkbox">-->
+            <!--<label>-->
+                <!--<input type="checkbox"> Check me out-->
+            <!--</label>-->
+        <!--</div>-->
+        <!--<button type="submit" class="btn btn-default">Submit</button>-->
+    <!--</form>-->
     <script>
-        var Ocolor1 = document.querySelector('.color1');
-        Ocolor1.style = body.
+        $(".colour").css({"background-color":"yellow"});
     </script>
 </body>
 </html>

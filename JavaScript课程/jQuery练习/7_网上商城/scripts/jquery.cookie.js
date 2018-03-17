@@ -9,28 +9,28 @@
  */
 
 /**
- * Create a cookie with the given name and value and other optional parameters.
+ * Create a 本地存储 with the given name and value and other optional parameters.
  *
- * @example $.cookie('the_cookie', 'the_value');
- * @desc Set the value of a cookie.
- * @example $.cookie('the_cookie', 'the_value', { expires: 7, path: '/', domain: 'jquery.com', secure: true });
- * @desc Create a cookie with all available options.
- * @example $.cookie('the_cookie', 'the_value');
- * @desc Create a session cookie.
- * @example $.cookie('the_cookie', null);
- * @desc Delete a cookie by passing null as value. Keep in mind that you have to use the same path and domain
- *       used when the cookie was set.
+ * @example $.本地存储('the_cookie', 'the_value');
+ * @desc Set the value of a 本地存储.
+ * @example $.本地存储('the_cookie', 'the_value', { expires: 7, path: '/', domain: 'jquery.com', secure: true });
+ * @desc Create a 本地存储 with all available options.
+ * @example $.本地存储('the_cookie', 'the_value');
+ * @desc Create a session 本地存储.
+ * @example $.本地存储('the_cookie', null);
+ * @desc Delete a 本地存储 by passing null as value. Keep in mind that you have to use the same path and domain
+ *       used when the 本地存储 was set.
  *
- * @param String name The name of the cookie.
- * @param String value The value of the cookie.
- * @param Object options An object literal containing key/value pairs to provide optional cookie attributes.
+ * @param String name The name of the 本地存储.
+ * @param String value The value of the 本地存储.
+ * @param Object options An object literal containing key/value pairs to provide optional 本地存储 attributes.
  * @option Number|Date expires Either an integer specifying the expiration date from now on in days or a Date object.
- *                             If a negative value is specified (e.g. a date in the past), the cookie will be deleted.
- *                             If set to null or omitted, the cookie will be a session cookie and will not be retained
+ *                             If a negative value is specified (e.g. a date in the past), the 本地存储 will be deleted.
+ *                             If set to null or omitted, the 本地存储 will be a session 本地存储 and will not be retained
  *                             when the the browser exits.
- * @option String path The value of the path atribute of the cookie (default: path of page that created the cookie).
- * @option String domain The value of the domain attribute of the cookie (default: domain of page that created the cookie).
- * @option Boolean secure If true, the secure attribute of the cookie will be set and the cookie transmission will
+ * @option String path The value of the path atribute of the 本地存储 (default: path of page that created the 本地存储).
+ * @option String domain The value of the domain attribute of the 本地存储 (default: domain of page that created the 本地存储).
+ * @option Boolean secure If true, the secure attribute of the 本地存储 will be set and the 本地存储 transmission will
  *                        require a secure protocol (like HTTPS).
  * @type undefined
  *
@@ -40,13 +40,13 @@
  */
 
 /**
- * Get the value of a cookie with the given name.
+ * Get the value of a 本地存储 with the given name.
  *
- * @example $.cookie('the_cookie');
- * @desc Get the value of a cookie.
+ * @example $.本地存储('the_cookie');
+ * @desc Get the value of a 本地存储.
  *
- * @param String name The name of the cookie.
- * @return The value of the cookie.
+ * @param String name The name of the 本地存储.
+ * @return The value of the 本地存储.
  * @type String
  *
  * @name $.cookie
@@ -54,7 +54,7 @@
  * @author Klaus Hartl/klaus.hartl@stilbuero.de
  */
 jQuery.cookie = function(name, value, options) {
-    if (typeof value != 'undefined') { // name and value given, set cookie
+    if (typeof value != 'undefined') { // name and value given, set 本地存储
         options = options || {};
         if (value === null) {
             value = '';
@@ -78,13 +78,13 @@ jQuery.cookie = function(name, value, options) {
         var domain = options.domain ? '; domain=' + (options.domain) : '';
         var secure = options.secure ? '; secure' : '';
         document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
-    } else { // only name given, get cookie
+    } else { // only name given, get 本地存储
         var cookieValue = null;
         if (document.cookie && document.cookie != '') {
             var cookies = document.cookie.split(';');
             for (var i = 0; i < cookies.length; i++) {
                 var cookie = jQuery.trim(cookies[i]);
-                // Does this cookie string begin with the name we want?
+                // Does this 本地存储 string begin with the name we want?
                 if (cookie.substring(0, name.length + 1) == (name + '=')) {
                     cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
                     break;
