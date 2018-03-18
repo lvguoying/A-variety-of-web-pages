@@ -20,7 +20,7 @@ body{
 .wrapper{
     /*background-image:url('images/pattern2.png');*/
     width:100%;
-    height: 1000px;
+    height: 1150px;
     position: relative;
 }
 .wrapper .section{
@@ -98,8 +98,8 @@ body{
 
 }
 .wrapper .container{
-    width: 50%;
-    height: 1114px;
+    width: 40%;
+    height: 100%;
     border: 2px solid #999;
     position: absolute;
     top: 56px;
@@ -112,6 +112,7 @@ body{
     margin: 0 auto;
     border-radius: 4px;
     padding: 20px 25px 35px 25px;
+    width: 100%;
 }
 .wrapper .container .container-message .container-message-introduction h1{
     font-family: "Signika";
@@ -126,73 +127,76 @@ body{
     vertical-align: inherit;
     color: #999;
 }
-/*.wrapper .container .container-message .container-message-introduction ul{*/
-    /*!*float: left;*!*/
+.wrapper .container .container-message .container-message-introduction ul{
+    float: left;
+    margin: 10px 44px 0 0;
+}
+.wrapper .container .container-message .container-message-introduction ul li{
     /*border: 1px solid #000;*/
-    /*!*margin: 10px 44px 0 0;*!*/
-/*}*/
-/*.wrapper .container .container-message .container-message-introduction ul li{*/
-    /*!*border: 1px solid #000;*!*/
-    /*border-radius: 5px;*/
-    /*color: #666666;*/
-    /*font-size: 11px;*/
-    /*border-left: 3px solid #cccccc;*/
-    /*background: #efefef;*/
-    /*margin-bottom: 30px;*/
-    /*padding: 10px 20px 10px 10px;*/
-/*}*/
-/*.wrapper .container .container-message .container-message-introduction ul li span{*/
-    /*font-weight: bold;*/
-/*}*/
-/*.container-skill{*/
-    /*margin-top: 20px;*/
-    /*border: 1px solid #000000;*/
-/*}*/
-/*.container-skill div{*/
-    /*float: left;*/
-    /*margin: -40px 60px 0 30px;*/
+    border-radius: 5px;
+    color: #666666;
+    font-size: 11px;
+    border-left: 3px solid #cccccc;
+    background: #efefef;
+    margin-bottom: 30px;
+    padding: 10px 20px 10px 10px;
+}
+.wrapper .container .container-message .container-message-introduction ul li span{
+    font-weight: bold;
+}
+.container-skill{
+    margin-top: 40px;
+}
+.container-skill div{
+    float: left;
+    margin: -40px 60px 0 30px;
 
-/*}*/
-/*.container-skill div h1{*/
-    /*font-family: "Signika";*/
-    /*font-weight: 400;*/
-    /*font-size: 18px;*/
-    /*color: #CD5353;*/
-    /*margin: 0 0 10px 0;*/
-/*}*/
-/*.container-skill div li{*/
-    /*background-color: #c0a16b;*/
-    /*border-radius: 6px;*/
-    /*width: 150px;*/
-    /*margin-bottom: 20px;*/
-    /*font-size: 15px;*/
-    /*color: #000000;*/
-/*}*/
-/*.container-exp{*/
-    /*width: 400px;*/
-    /*border: 1px solid #000000;*/
-    /*margin-left: 30px;*/
-/*}*/
-/*.container-exp h1{*/
-    /*font-family: "Signika";*/
-    /*font-weight: 400;*/
-    /*font-size: 18px;*/
-    /*color: #CD5353;*/
-    /*margin: 0 0 10px 0;*/
-/*}*/
-/*.container-exp h4{*/
-    /*font-size: 12px;*/
-    /*color: #666;*/
-    /*font-weight: bold;*/
-/*}*/
-/*.container-exp h6{*/
-    /*font-size: 11px;*/
-    /*color: #333;*/
-    /*font-weight: bold;*/
-    /*font-style: italic;*/
-/*}*/
-/*.container-exp p{*/
-    /*font-size: 12px;*/
-    /*vertical-align: inherit;*/
-    /*color: #999;*/
-/*}*/
+}
+.container-skill div h1{
+    font-family: "Signika";
+    font-weight: 400;
+    font-size: 18px;
+    color: #CD5353;
+    margin: 0 0 10px 0;
+}
+.container-skill div li{
+    background-color: #c0a16b;
+    border-radius: 6px;
+    width: 150px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #000000;
+}
+.container-exp{
+    width: 400px;
+    margin-left: 30px;
+}
+.container-exp h1{
+    font-family: "Signika";
+    font-weight: 400;
+    font-size: 18px;
+    color: #CD5353;
+    margin: 0 0 4px 0;
+}
+.container-exp h4{
+    font-size: 12px;
+    color: #666;
+    font-weight: bold;
+}
+.container-exp h6{
+    font-size: 11px;
+    color: #333;
+    font-weight: bold;
+    font-style: italic;
+}
+.container-exp p{
+    font-size: 12px;
+    vertical-align: inherit;
+    color: #999;
+}
+.btn-lg{
+    position: absolute;
+    bottom: -40px;
+    left: 900px;
+    background-color: #000;
+}

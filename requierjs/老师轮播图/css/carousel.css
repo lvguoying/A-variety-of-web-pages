@@ -1,0 +1,64 @@
+.carousel-container{
+    width: 520px;
+    height: 280px;
+    position: relative;
+}
+.carousel-tabs{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.carousel-tabs li{
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.carousel-tabs .selected{
+    background: orange;
+    color: #ffffff;
+}
+.carousel-imgs img{
+    display: none;
+}
+.carousel-imgs .selected{
+    display: block;
+}
+/*.carousel-arrows{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}*/
+.carousel-arrows .carousel-prev, .carousel-arrows .carousel-next{
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+.carousel-arrows .carousel-prev.bottom{
+    left: 10px;
+    bottom: 10px;
+}
+.carousel-arrows .carousel-next.bottom {
+    left: 35px;
+    bottom: 10px;
+}
+
+.carousel-arrows .carousel-prev.center{
+    top: 50%;
+    margin-top: -10px;
+    left: 0;
+}
+.carousel-arrows .carousel-next.center{
+    top: 50%;
+    margin-top: -10px;
+    right: 0;
+}
