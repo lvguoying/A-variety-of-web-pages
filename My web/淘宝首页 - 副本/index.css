@@ -12,7 +12,7 @@ html,body{
 .wrapper{
     width: 100%;
     height: 100%;
-   
+
 }
 .wrapper .top-nav-wrap{
     width: 100%;
@@ -34,7 +34,7 @@ html,body{
 }
 .wrapper .top-nav-wrap .top-nav li{
     float: left;
-    margin-right:7px; 
+    margin-right:7px;
 }
 .wrapper .top-nav-wrap .top-nav li a{
     color: #6c6c6c;
@@ -61,7 +61,7 @@ html,body{
     width: 6px;
     height: 3px;
     vertical-align: middle;
-    background-size:100% 100%; 
+    background-size:100% 100%;
     border: 1px solid #000;
 }
 .wrapper .top-nav-wrap .top-nav .xsjPic{
@@ -129,18 +129,18 @@ html,body{
     line-height: 22px;
     color: #f40;
     margin-right:4px;
-    font-size: 12px 
+    font-size: 12px
 }
 .wrapper .search-wrap .search-con .search-box .search-bd li:hover{
-    background-color:#ffeee5; 
+    background-color:#ffeee5;
 }
 .wrapper .search-wrap .search-con .search-box .search-bd .select{
     background: linear-gradient(to right,#ff9000 0,#ff5000 100%);
     color: #fff;
     font-weight: 700;
-    border-top-right-radius:6px; 
-    border-top-left-radius:6px; 
-    
+    border-top-right-radius:6px;
+    border-top-left-radius:6px;
+
 }
 .wrapper .search-wrap .search-con .search-bd .search-panel{
     width: 627px;
@@ -156,7 +156,7 @@ html,body{
     height: 40px;
     z-index: 1000;
     border-top-right-radius: 20px;
-    border-bottom-right-radius:20px; 
+    border-bottom-right-radius:20px;
     text-align: center
 }
 .wrapper .search-wrap .search-con .btn button{
@@ -177,7 +177,7 @@ html,body{
     border: 2px solid #ff5000;
     border-top-left-radius: 20px;
     border-bottom-left-radius:20px;
-    border-right:none; 
+    border-right:none;
     overflow: hidden;
 }
 .wrapper .search-wrap .search-con .search-inp-box .search-inp{
@@ -193,7 +193,7 @@ html,body{
     outline: 0;
     text-indent: 10px;
     padding: 6px 16px;
-    background-color: #fff; 
+    background-color: #fff;
 }
 .wrapper .search-wrap .search-con .search-panel .sousuo,
 .wrapper .search-wrap .search-con .search-panel .camera{
@@ -206,7 +206,7 @@ html,body{
     top: 11px;
     left: 12px;
     background: url("#") no-repeat;
-    background-size:100% 100%; 
+    background-size:100% 100%;
 }
 .wrapper .search-wrap .search-con .search-panel .camera{
     width: 20px;
@@ -214,7 +214,7 @@ html,body{
     top: 11px;
     right: 90px;
     background: url("#") no-repeat;
-    background-size:100% 100%; 
+    background-size:100% 100%;
 }
 .wrapper .search-wrap .search-con .search-box .search-ft{
     width: 625px;
@@ -244,7 +244,7 @@ html,body{
     width: 610px;
     height: 22px;
     /* border: 1px solid     #000; */
-    margin-left:17px;   
+    margin-left:17px;
 }
 .wrapper .search-wrap .search-con .code-box{
     display: inline-block;
@@ -274,7 +274,7 @@ html,body{
 .wrapper .screen-nav-wrap{
     width: 100%;
     height: 30px;
-  
+
 }
 .wrapper .screen-nav-con{
     width: 1190px;
@@ -316,21 +316,18 @@ html,body{
     width: 1190px;
     height: 632px;
     margin: 0 auto;
-    border: 1px solid #000;
 }
 .wrapper .screen-box-wrap .main{
     width: 890px;
     height: 632px;
-    border: 1px solid #000;
     float: left;
 }
 .wrapper .screen-box-wrap .main .main-inner{
     width: 720px;
     height: 522px;
-    border: 1px solid #000;
     vertical-align: top;
     display: inline-block;
-    
+
 }
 .wrapper .screen-box-wrap .main .main-inner .inner-left{
     height: 522px;
@@ -349,7 +346,7 @@ html,body{
     height: 32px;
     width: 144px;
     line-height: 32px;
-    font-weight: 400;
+    font-weight: 300;
     padding-left: 25px;
     padding-right: 19px;
     position: relative;
@@ -368,7 +365,8 @@ html,body{
     position: absolute;
     display: inline-block;
     right: 10px;
-    height: 10px;
+    height: 5px;
+    width: 5px;
     background-image: url("#");
     background-size: 100% 100%;
     top: 50%;
@@ -385,14 +383,13 @@ html,body{
     position: relative;
     width: 520px;
     height: 280px;
-    background-color: rgb(82, 13, 13);
+    /* bac  kground-color: rgb(82, 13, 13); */
 }
 .wrapper .screen-box-wrap .main .main-inner .inner-con .pic-box ul{
     position: absolute;
     bottom: 15px;
     left: 50%;
     margin-left: -35px;
-    /* width: 70px; */
     height: 13px;
     background-color: rgba(255, 255, 255, .3);
     border-radius: 10px;
@@ -409,17 +406,239 @@ html,body{
     border-radius: 50%;
     background-color: #fff;
 }
+.wrapper .screen-box-wrap .main .main-inner .inner-con .pic-box ul li .select{
+    background-color: #ff5000;
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-mall{
+    width: 520px;
+    height: 230px;
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-mall .head{
+    width: 520px;
+    height: 22px;
+    border-bottom: 3px solid #ff1648;
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-mall .head .tm-pic{
+    display: inline-block;
+    width: 136px;
+    height: 20px;
+    background-image: url("!!");
+    background-size: 100% 100%;
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-mall .head .tm{
+    color: #666;
+    font-style: 12px;
+}
+
+
 .wrapper .screen-box-wrap .main .col-middle{
-    width: 160px;
-    height: 522px;
-    border: 1px solid #000;
+    width: 157px;
+    height: 512px;
     vertical-align: top;
     display: inline-block;
-    
+    margin-top: 10px;
+
+}
+.wrapper .screen-box-wrap .main .col-middle h5{
+    color: #a1a1a1;
+    font-size: 12px;
+    line-height: 20px;
+}
+.wrapper .screen-box-wrap .main .main-bottom{
+    width: 888px;
+    height: 100px;
+}
+.wrapper .screen-box-wrap .main .main-bottom .bottom-con{
+    position: relative;
+    margin-top: 10px;
+    height: 73px;
+    padding: 14px 14px 12px 20px;
+    background-color: #fff;
+}
+.wrapper .screen-box-wrap .main .main-bottom .logo{
+    float: left;
+}
+.wrapper .screen-box-wrap .main .main-bottom .tbttcon{
+    height: 73px;
+    width: 675px;
+    position: absolute;
+    top: 14px;
+    left: 200px;
+}
+.wrapper .screen-box-wrap .main .main-bottom .tbttcon img{
+    float: left;
+    width: 130px;height: 73px;
+}
+.wrapper .screen-box-wrap .main .main-bottom h4:hover{
+    color: #ff5000;
+}
+.wrapper .screen-box-wrap .main .main-bottom h4{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #333;
+    margin-top: 2px;
+    margin-left: 144px;
+}
+.wrapper .screen-box-wrap .main .main-bottom p{
+    color: #999;
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+    font-size: 14px;
+    margin-left: 144px;
 }
 .wrapper .screen-box-wrap .col-right{
-    width: 290px;
+    width: 289px;
     height: 632px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.wrapper .screen-box-wrap .col-right .member{
+    width: 290px;
+    height: 132px;
+    padding: 3px 0 10px 0;
+    background: url("#") no-repeat;
+    background-size: 100% 100%;
+}
+.wrapper .screen-box-wrap .col-right .member .member-bd{
+    width: 290px;
+    height: 91px;
+}
+.wrapper .screen-box-wrap .col-right .member .member-bd .tx{
+    width: 290px;
+    text-align: center;
+    height: 56px;
+}
+.wrapper .screen-box-wrap .col-right .member-bd .tx a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+}
+.wrapper .screen-box-wrap .col-right .member-bd .tx img{
+    border-radius: 50%;
+}
+.wrapper .screen-box-wrap .col-right .member-bd .hello{
+    display: block;
+    height: 17px;
+    line-height: 17px;
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+}
+.wrapper .screen-box-wrap .col-right .member-bd p{
+    width: 290px;
+    height: 17px;
+    line-height: 17px;
+    text-align: center;
+}
+.wrapper .screen-box-wrap .col-right .member-bd .icon,
+.wrapper .screen-box-wrap .col-right .member-bd .club{
+    display: inline-block;
+    height: 17px;
+    position: relative;
+    color: #ff5000;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0 10px 0 20px;
+    background: #ffe4db;
+    border-radius: 9px;
+}
+.wrapper .screen-box-wrap .col-right .member-bd .pic{
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("##")
+}
+.wrapper .screen-box-wrap .col-right .member-bd .icon .pic{
+    background-position: 0 -527.5px;
+}
+.wrapper .screen-box-wrap .col-right .member-bd .club .pic{
+    background-position: 0 -528px;
+}
+
+.wrapper .screen-box-wrap .col-right .member .member-ft{
+    width: 290px;
+    height: 40px;
+    text-align: center;
+    margin-top: 8px;
+}
+.wrapper .screen-box-wrap .col-right .member .member-ft a{
+    display: inline-block;
+    width: 75px;
+    height: 25px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to right,#ff5000 0,#ff6f06 100%);
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-right: 7px;
+}
+.wrapper .screen-box-wrap .col-right .member .member-ft .login{
+    width: 92px;
+}
+.wrapper .screen-box-wrap .col-right .message{
+    width: 290px;
+    height: 26px;
+    background-color: #ffe4db;
+}
+.wrapper .screen-box-wrap .col-right .message a{
+    color: #ff5000;
+    line-height: 26px;
+    position: relative;
+    padding-left: 82px;
+    font-size: 12px;
+}
+.wrapper .screen-box-wrap .col-right .message a span{
+    position: absolute;
+    right: -50px;
+    top: 4px;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-left: 32px;
+    border-width: 5px 0 5px 7px;
+    border-color: transparent transparent transparent #f40;
+}
+.wrapper .screen-box-wrap .col-right .notice{
+    height: 98px;
+    padding-top: 10px;
+    width: 290px;
+
+}
+.wrapper .screen-box-wrap .col-right .notice li{
+    float: left;
+
+}
+.wrapper .screen-box-wrap .col-right .notice .title{
+    /* width: 290px; */
+    height: 24px;
+    margin-top: 4px;
+    padding: 0 8px;
+
+}
+.wrapper .screen-box-wrap .col-right .notice .title li{
+    width: 32px;
+    line-height: 20px;
+    margin: 0 11px;
+    text-align: center;
+}
+.wrapper .screen-box-wrap .col-right .notice .title li a{
+    color: #3c3c3c;
+    font-size: 14px;
+
+}
+.wrapper .screen-box-wrap .col-right .notice .title .select{
+    font-weight: 700;
+    border-bottom: 2px solid #f40;
 }
