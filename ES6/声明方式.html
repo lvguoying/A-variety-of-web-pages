@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1{
+            width: 0;
+            height: 0;
+            /*border-top: 40px solid transparent;*/
+            /*border-left: 40px solid transparent;*/
+            border-right: 40px solid transparent;
+            border-bottom: 40px solid #ff0000;
+
+        }
+        .aside {
+            margin-bottom: 100px;
+            width: 100px;
+            height: 150px;
+            background: #f66;
+        }
+        .main {
+            margin-top: 100px;
+            height: 200px;
+            background: #fcc;
+        }
+        .text{
+            /*盒子main的外面包一个div，通过改变此div的属性使两个盒子分属于两个不同的BFC，以此来阻止margin重叠*/
+            overflow: hidden;  //此时已经触发了BFC属性。
+        }
+    </style>
+</head>
+<body>
+<!--<div class="div1"></div>-->
+<div class="aside"></div>
+<div class="text">
+    <div class="main"></div>
+</div>
+
+
+    <script>
+//        var a = 5;
+//        function foo() {
+//            console.log(a);// 5
+//            a = 6;
+//        }
+//        foo();
+
+//        var a = 5;
+//        function foo() {
+//            console.log(a);// undefined
+//           var a = 6;
+//        }
+//        foo();
+//    var funcs = [];
+//    for (var i = 0; i < 10; i++) {
+//        funcs.push(function() { console.log(i) })
+//    }
+//    funcs.forEach(function(func) {
+//        func()
+//    })
+//for (var i = 0; i < 5; i++) {
+//    console.log(i);
+//}
+//for (var i = 0; i < 5; i++) {
+//    setTimeout(function() {
+//        console.log(i);
+//    }, 1000 * i);
+//}
+setTimeout(function() {
+    console.log(1)
+}, 0);
+new Promise(function executor(resolve) {
+    console.log(2);
+    for( var i=0 ; i<10000 ; i++ ) {
+        i == 9999 && resolve();
+    }
+    console.log(3);
+}).then(function() {
+    console.log(4);
+});
+console.log(5);
+    </script>
+</body>
+</html>

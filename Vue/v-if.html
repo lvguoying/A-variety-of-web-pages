@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <span v-if="isLogin == 1">{{msg}}</span>
+
+        <span>请登录</span>
+
+
+    </div>
+    <script src="JS/vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el:'#app',
+            data:{
+                isLogin:1,
+                msg:'欢迎：吕国营'
+            }
+
+        })
+    </script>
+</body>
+</html>
