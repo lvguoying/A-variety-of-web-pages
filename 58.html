@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>订单详情</title>
+    <script>
+        (function (doc, win) 
+        { var docEl = doc.documentElement,
+         resizeEvt = "orientationchange" in window ? "orientationchange" : "resize", 
+         recalc = function () { var clientWidth = docEl.clientWidth; 
+         if (!clientWidth) { return } 
+         if (clientWidth > 540) { docEl.style.fontSize = "450%" }
+          else { if (clientWidth < 320) { docEl.style.fontSize = "267.5%" } 
+          else { docEl.style.fontSize = 312.5 * (clientWidth / 375) + "%" } } };
+           recalc(); if (!doc.addEventListener)
+            { return } win.addEventListener(resizeEvt, recalc, false);
+            /*doc.addEventListener("DOMContentLoaded", recalc, false);*/ })
+            (document, window);
+    </script>
+    <link rel="dns-prefetch" href="//static.daojia.com">
+    <link rel="dns-prefetch" href="//images.daojia.com">
+    <link rel="dns-prefetch" href="//jzt.daojia.com">
+    <link href="//static.djtest.cn/assets/resource/project/jzOrderDetail/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script type="text/javascript" src="//static.djtest.cn/assets/resource/project/jzOrderDetail/js/manifest.js"></script>
+    <script type="text/javascript" src="//static.djtest.cn/assets/resource/project/jzOrderDetail/js/vendor.js"></script>
+    <script type="text/javascript" src="//static.djtest.cn/assets/resource/project/jzOrderDetail/js/main.js"></script>
+</body>
+
+</html>
